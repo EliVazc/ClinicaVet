@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilosS.css">
+    <link rel="stylesheet" href="/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
+    <title>Menu Membresia</title>
+</head>
+<body>
+    <header>
+    <h1>Clínica Veterinaria</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/membresia">Membresía</a></li>
+        <li><a href="/mascotas.">Mascotas</a></li>
+        <li><a href="/clientes.">Usuario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <form action="/insertar" method="post">
+		<label for="tipo_membresia">Tipo de membresía:</label>
+        <select id="tipo_membresia" name="tipo_membresia" required>
+            <option value="">Seleccionar</option>
+            <option value="normal">Normal</option>
+            <option value="premium">Premium</option>
+        </select><br><br>
+		<label for="fecha_inicio">Fecha de inicio:</label>
+		<input type="date" id="fecha_inicio" name="fecha_inicio">
+		<label for="fecha_vencimiento">Caducidad:</label>
+		<input type="date" id="fecha_vencimiento" name="fecha_vencimiento">
+        <label for="costo">Costo:</label>
+		<input type="number" id="costo" name="costo">
+        <label for="id_cliente">ID del cliente:</label>
+		<input type="number" id="id_cliente" name="id_cliente">
+		<input type="submit" value="Insertar">
+	</form>
+      
+      <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Tipo de membresía: </th>
+                <th>Fecha de inicio:</th>
+                <th>Vencimiento</th>
+                <th>Costo</th>
+                <th>ID del cliente</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%rows.forEach(tblmembresia => {%>
+            <tr>
+                <td><%=tblmembresia.tipo_membresia%></td>
+                <td><%=tblmembresia.fecha_inicio%></td>
+                <td><%=tblmembresia.fecha_vencimiento%></td>
+                <td><%=tblmembresia.costo%></td>
+                <td><%=tblmembresia.id_cliente%></td>
+                
+            </tr><%})%>
+        </tbody>
+      </table>
+
+      <footer>
+        <p>Clínica Veterinaria &copy; 2023</p>
+      </footer>
+      
+</body>
+</html>

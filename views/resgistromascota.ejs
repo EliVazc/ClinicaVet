@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estiloR.css">
+    <title>Resgistrar mascotas</title>
+</head>
+<body>
+    <form action="/insertar" method="post">
+        <label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre">
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+		<input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        <label for="especie">Especie:</label>
+		<input type="text" id="especie" name="especie">
+        <label for="raza">Raza:</label>
+		<input type="text" id="raza" name="raza">
+		<label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="">Seleccionar</option>
+            <option value="Hembra">Hembra</option>
+            <option value="Macho">Macho</option>
+        </select><br><br>
+        <label for="id_cliente">ID del dueño:</label>
+		<input type="text" id="id_cliente" name="id_cliente">
+        <label for="imagen">Foto del peludito:</label>
+		<input type="file" id="imagen" name="imagen">
+				<input type="submit" value="Insertar">
+</body>
+</html>

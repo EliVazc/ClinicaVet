@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="/estilo.css">
+    <title>Muestra de alumnos</title>
+</head>
+<body>
+    <header>
+        <h1>Clínica Veterinaria</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/membresia">Membresía</a></li>
+            <li><a href="/mascotas.">Mascotas</a></li>
+            <li><a href="/clientes.">Usuario</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="contenedor">
+        <%rows.forEach(tblclientes =>{%>
+        <div class="card">
+            <figure>
+                <img src="/imagenes/user.png" alt="">
+            </figure>
+            <div class="contenido">
+                <h3><%=tblclientes.nombre%></h3>
+                <p>ID: <%=tblclientes.id_clientes%></p>
+                <p><%=tblclientes.correo%></p>
+                <p><%=tblclientes.telefono%></p>
+                <p><%=tblclientes.direccion%></p>
+                <p>ID: <%=tblclientes.id_clientes%></p>
+                <p>ID: <%=tblclientes.fecha_registro%></p>
+
+                <a href="#">Leer más</a>
+            </div>
+        </div>
+        <%})%>
+    </div>
+    <footer>
+        <p>Clínica Veterinaria &copy; 2023</p>
+      </footer>
+    </body>
+</body>
+</html>

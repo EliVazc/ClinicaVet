@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="/estilo.css">
+    <title>Detalles Mascotas</title>
+</head>
+<body>
+    <header>
+        <h1>Clínica Veterinaria</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/membresia">Membresía</a></li>
+            <li><a href="/mascotas.">Mascotas</a></li>
+            <li><a href="/clientes.">Usuario</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="contenedor">
+        <%rows.forEach(tblmascotas =>{%>
+        <div class="card">
+            <figure>
+                <img src="/imagenes/<%=tblmascotas.imagen%>" alt="">
+            </figure>
+            <div class="contenido">
+                <h3><%=tblmascotas.nombre%></h3>
+                <p>ID: <%=tblmascotas.id_mascota%></p>
+                <p><%=tblmascotas.fecha_nacimiento%></p>
+                <p><%=tblmascotas.especie%></p>
+                <p><%=tblmascotas.raza%></p>
+                <p><%=tblmascotas.sexo%></p>
+                <p>ID Dueño: <%=tblmascotas.id_cliente%></p>
+                <a href="#">Leer más</a>
+            </div>
+        </div>
+        <%})%>
+    </div>
+    <footer>
+        <p>Clínica Veterinaria &copy; 2023</p>
+      </footer>
+</body>
+</html>

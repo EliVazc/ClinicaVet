@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/estiloI.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="bootstrap">
+            <form action="/registrar" method="POST"  enctype="multipart/form-data">
+                <h2>Completa el formulario.</h2>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
+                <input type="text" name="especie" placeholder="Especie">
+                <input type="text" name="raza" placeholder="Raza">
+                <input type="text" name="sexo" placeholder="Sexo">
+                <input type="number" name="id_cliente" placeholder="Especie">
+                <input type="file" name="file">
+                <br><br>
+                <br>
+                <input type="submit" value="Subir">
+            </form>
+        </div>
+    </div>
+</body>

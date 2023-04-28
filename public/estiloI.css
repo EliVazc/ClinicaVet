@@ -1,0 +1,100 @@
+body {
+    background-image: url('ruta/a/la/imagen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bootstrap {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.bootstrap h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.bootstrap input[type="text"],
+.bootstrap input[type="date"],
+.bootstrap input[type="number"],
+.bootstrap input[type="file"],
+.bootstrap select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.bootstrap input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bootstrap input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.bootstrap input[type="file"] {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.bootstrap input[type="file"]::-webkit-file-upload-button {
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bootstrap input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #0069d9;
+}
+
+.bootstrap input[type="file"]::-moz-file-upload-button {
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bootstrap input[type="file"]::-moz-file-upload-button:hover {
+    background-color: #0069d9;
+}
+
+.bootstrap label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}

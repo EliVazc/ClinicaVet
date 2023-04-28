@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 500px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para las etiquetas */
+  label {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Estilos para los campos de texto */
+  input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para el botón de envío */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el botón de envío cuando se pasa el mouse */
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
